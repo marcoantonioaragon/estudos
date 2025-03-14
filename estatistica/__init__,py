@@ -1,0 +1,22 @@
+# Exportando as classes principais para facilitar a importação
+from .testes.normalidade import TesteNormalidade
+from .testes.homocedasticidade import TesteHomocedasticidade
+from .testes.anova import ANOVA, ANOVAWelch
+from .testes.mann_whitney import TesteMannWhitney
+from .testes.qui import TesteQuiQuadradoProporcoes
+from .testes.z_test import TesteZ
+from .testes.t_test import TesteT
+from .motor_estatistico import MotorEstatistico
+
+# Lista de classes e funções disponíveis para importação
+__all__ = [
+    "TesteNormalidade",
+    "TesteHomocedasticidade",
+    "ANOVA",
+    "ANOVAWelch",
+    "TesteMannWhitney",
+    "TesteQuiQuadradoProporcoes",
+    "TesteZ",
+    "TesteT",
+    "MotorEstatistico"
+]
